@@ -1,0 +1,481 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #ececf1;
+  color: #17181b;
+}
+
+.poster-wrap {
+  max-width: 980px;
+  margin: 20px auto 0;
+  padding: 0 12px;
+}
+
+.poster-card {
+  border-radius: 16px;
+  padding: 28px;
+  color: #1f1a05;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.45), transparent 34%),
+    radial-gradient(circle at 0% 100%, rgba(255, 248, 204, 0.72), transparent 36%),
+    linear-gradient(120deg, #f2d477, #f8e7a4 52%, #d6a11d);
+  box-shadow: 0 8px 22px rgba(123, 85, 0, 0.25);
+}
+
+.poster-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(220px, 0.85fr);
+  align-items: center;
+  gap: 22px;
+}
+
+.poster-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.poster-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster-image {
+  width: min(300px, 100%);
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(54, 39, 7, 0.25);
+  padding: 10px;
+  box-shadow: 0 6px 16px rgba(80, 52, 0, 0.2);
+}
+
+.poster-badge {
+  display: inline-block;
+  background: rgba(47, 35, 5, 0.90);
+  color: #ffec9f;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.poster-title {
+  margin: 14px 0 8px;
+  font-size: 38px;
+  line-height: 1.1;
+  color: #362707;
+}
+
+.poster-tagline {
+  margin: 0;
+  font-size: 18px;
+  color: #4a390a;
+}
+
+.poster-offer {
+  margin-top: 18px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #7a1f13;
+}
+
+.poster-sheet-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+  min-height: 42px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(47, 35, 5, 0.92);
+  color: #ffec9f;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.poster-sheet-link:hover {
+  background: rgba(33, 24, 3, 0.96);
+}
+
+.link-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.google-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+  color: #ffffff;
+  background: conic-gradient(#4285f4 0deg 90deg, #34a853 90deg 180deg, #fbbc05 180deg 270deg, #ea4335 270deg 360deg);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+}
+
+.poster-meta {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.poster-meta span {
+  border: 1px solid rgba(54, 39, 7, 0.35);
+  background: rgba(255, 255, 255, 0.40);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 980px;
+  margin: 28px auto;
+  padding: 0 12px 36px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.15;
+}
+
+.sales-history-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.clear-history-btn {
+  width: auto;
+  margin-top: 0;
+  padding: 9px 14px;
+  font-size: 16px;
+  background: #b4232b;
+}
+
+.clear-history-btn:hover {
+  background: #8e1b22;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+select,
+input {
+  width: 100%;
+  border: 1px solid #cbced7;
+  border-radius: 10px;
+  padding: 13px 12px;
+  font-size: 25px;
+}
+
+button {
+  margin-top: 10px;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #fff;
+  background: #242a7a;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1c2164;
+}
+
+.small-note {
+  margin: 2px 0 0;
+  line-height: 1.4;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.pricing-grid label {
+  margin-bottom: 6px;
+}
+
+#netAmountPreview {
+  color: #1c2164;
+}
+
+.stock-box {
+  background: #f0f2f7;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: #d11a4a;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table {
+  min-width: 1250px;
+}
+
+.history-table th,
+.history-table td {
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+thead th {
+  background: #242a7a;
+  color: #fff;
+}
+
+th,
+td {
+  border: 1px solid #d6d8df;
+  text-align: center;
+  padding: 12px 10px;
+  vertical-align: middle;
+}
+
+.empty-row {
+  color: #7b808d;
+}
+
+.report-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 21px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.report-row input {
+  width: min(440px, 100%);
+  font-size: 16px;
+  padding: 10px 12px;
+}
+
+.report-row #sheetSyncStatus {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.report-row #lastSyncInfo {
+  font-size: 15px;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.report-row a {
+  color: #242a7a;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+}
+
+.report-row button {
+  width: auto;
+  margin-top: 0;
+  padding: 10px 14px;
+  font-size: 16px;
+}
+
+.report-row a:hover {
+  text-decoration: underline;
+}
+
+#formFrame {
+  width: 100%;
+  min-height: 72vh;
+  border: 1px solid #d6d8df;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 999;
+}
+
+.modal-backdrop.show {
+  display: flex;
+}
+
+.modal-card {
+  width: min(1100px, 100%);
+  max-height: calc(100vh - 32px);
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.32);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.modal-close {
+  width: auto;
+  margin-top: 0;
+  padding: 8px 14px;
+  font-size: 16px;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 720px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .poster-card {
+    padding: 18px;
+  }
+
+  .poster-layout {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .poster-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .poster-meta {
+    justify-content: center;
+  }
+
+  .poster-image {
+    width: min(240px, 100%);
+    max-height: 220px;
+  }
+
+  .poster-title {
+    font-size: 28px;
+  }
+
+  .poster-tagline {
+    font-size: 15px;
+  }
+
+  .poster-offer {
+    font-size: 19px;
+  }
+
+  .card h2 {
+    font-size: 22px;
+  }
+
+  .report-row {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .report-row input {
+    width: 100%;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  select,
+  input,
+  button,
+  .report-row {
+    font-size: 16px;
+  }
+
+  .report-row button {
+    font-size: 16px;
+  }
+
+  .modal-card {
+    padding: 10px;
+  }
+
+  .modal-header h3 {
+    font-size: 20px;
+  }
+
+  .stock-box {
+    font-size: 30px;
+  }
+
+  #formFrame {
+    min-height: 66vh;
+  }
+}
